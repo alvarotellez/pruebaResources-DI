@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="_21_Resources.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_21_Resources"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+    mc:Ignorable="d">
+    <Page.Resources>
+        <LinearGradientBrush x:Key="buttonBackground">
+            <GradientStop Offset="0" Color="Silver"/>
+            <GradientStop Offset="1" Color="Orange"/>
+        </LinearGradientBrush>
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="btnUno" Content="Color del boton dentro del Page" Margin="25" HorizontalAlignment="Center" Background="{StaticResource buttonBackground}"/>
+
+            <Button x:Name="btn2" Content="Color desde el Aplication" Margin="25" HorizontalAlignment="Center" Background="{StaticResource buttonBackgroundApp}"/>
+            <Button x:Name="btnTres" Content="Color del boton desde un diccionario" Margin="25" HorizontalAlignment="Center" Background="{StaticResource buttonBackgroundDictionary}"/>
+        </StackPanel>
+    </Grid>
+</Page>
